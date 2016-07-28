@@ -1,0 +1,248 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+/* First Content block - About Me*/
+.container {
+	height: 650px;
+	width: 1260px;
+}
+
+.about-me-block {
+	background-color: #f4f4f4;
+}
+
+.about-me-block {
+	padding-left: 115px;
+}
+
+.about-me-block h3 {
+	font-size: 40px;
+	color: #7e7e7e;
+	margin: 0;
+	padding: 0;
+	margin-top: 135px;
+}
+
+.portfolio-block p,
+.about-me-block p,
+.about-me-block blockquote {
+	text-align: justify;
+	color: #7e7e7e;
+	margin-top: 20px;
+	padding: 0;
+}
+
+.about-me-block blockquote {
+	font-style: italic;
+	margin: 0;
+	padding-left: 20px;
+}
+
+.btn-green,
+.btn-green i {
+	color: #14af8f;
+}
+
+.btn-green {
+	border: 2px solid #14af8f;
+	margin-top: 70px;
+}
+
+.ipad {
+	position: relative;
+	top: 152px;
+	left: 242px;
+}
+
+/* Second Content block - Portfolio*/
+
+.portfolio-block {
+	color: #ffffff;
+	padding-right: 100px;
+}
+
+.portfolio-block h4 {
+	color: #474e5d;
+	font-size: 16px;
+}
+
+.portfolio-block h3 {
+	font-size: 40px;
+	color: #7e7e7e;
+	margin: 0;
+	padding: 0;
+	margin-top: 85px;
+}
+
+.btn-pink,
+.btn-pink i {
+	color: #ea4c89;
+}
+
+.btn-pink {
+	border: 2px solid #ea4c89;
+	margin-top: 40px;
+	width: 220px;
+}
+
+.devices {
+	position: absolute;
+	left: 0;
+	margin-top: 283px;
+}
+
+
+/* Donate block */
+
+.donate-block {
+	height: 325px!important;
+	background-image: url("img/donate-bg.png");
+	text-align: center;
+	padding-top: 87px;
+}
+
+
+.donate-block h3 {
+	font-size: 40px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.btn-donate {
+	color: #fff;
+	width: 220px;
+	margin-top: 25px;
+}
+
+/* Contact block */
+
+/* Social buttons */
+
+.contact-block {
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+.social-btn button {
+	margin-top: 245px;
+	background: transparent;
+	border: 3px solid #545454;
+	height: 60px;
+	width: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	margin-right: 40px;
+}
+
+.social-btn i {
+	color: #545454;
+	font-size: 30px;
+}
+
+/* Subscription form */
+
+.subscription {
+	margin-top: 60px;
+	margin-left: 380px;
+}
+
+.subscription h3 {
+	font-style: italic;
+	font-size: 16px;
+	float: left;
+} 
+
+.sub-form {
+	float: left;
+}
+
+.sub-form input:first-child {
+	border: 0;
+	height: 40px;
+	width: 220px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sub-form input {
+	margin-left: 20px;
+	margin-top: 7px;
+	padding-left: 15px;
+}
+
+::-webkit-input-placeholder {
+	color: #d3d3d3;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #d3d3d3;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #d3d3d3;
+}
+:-ms-input-placeholder {
+	color: #d3d3d3;
+}
+
+.sub-form input:focus {
+	border-bottom: 2px solid #6ec5ea;
+}
+
+.subscription button {
+	background-color: transparent;
+	border: none;
+}
+
+.subscription i {
+	color: #6ec5ea;
+	margin-left: -30px;
+}
+
+/* Footer */
+
+.footer {
+	height: 100px!important;
+}
+
+.footer p {
+	color: #545454;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.button-top {
+	padding: 2px 0 0 7px;
+	height: 30px;
+	width: 30px;
+	background-color: #f4f4f4;
+	border: none;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}

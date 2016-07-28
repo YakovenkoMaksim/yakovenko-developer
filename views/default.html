@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?= "CV " . Config::get('site_name') ?></title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/fonts.css" />
+	<link rel="stylesheet" href="/css/media.css" />
+	<link rel="stylesheet" href="/libs/css/bootstrap.min.css">
+
+	<script src="/libs/js/jquery-2.1.4.min.js"></script>
+	<script src="/libs/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/1894c75346.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js<?= Config::get('default_language') == 'ua' ? "?hl=ua" : "?hl=en"; ?>'></script>
+</head>
+<body>
+    <!-- Контейнер с классом "navbar" включает в себя элементы навигации -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+        <!-- Класс "container-fluid" - адаптивный контейнер -->
+        <div class="container-fluid">
+
+            <!-- Блок с кнопкой "Brand" и кнопкой для развертывания меню (для мобильных устройств) -->
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_menu">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <!-- Набор иконок для кнопки -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">&lt;Yakovenko M.&gt;</a>
+            </div>
+			
+            <!-- Набор ссылок навигации, форм и других элементов меню (в мобильном устройстве будет находится в раскрывающеемся списке) -->
+            <div class="collapse navbar-collapse" id="top_menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a <?php if (App::getRouter()->getAction() == 'exp') { ?> class='active' <?php } ?>
+						href="/pages/exp/"><i class="fa fa-line-chart" aria-hidden="true"></i><?= Config::get('default_language') == 'ua' ? "Досвід роботи" : "Experience"; ?></a>
+                    </li>
+					<li><a <?php if (App::getRouter()->getAction() == 'about') { ?> class='active' <?php } ?>
+						href="/pages/about/"><i class="fa fa-user" aria-hidden="true"></i><?= Config::get('default_language') == 'ua' ? "Про мене" : "About"; ?></a>
+					</li>
+					<li><a <?php if (App::getRouter()->getController() == 'contacts') { ?> class='active'
+						<?php } ?>
+						href="/contacts/"><i class="fa fa-envelope-o" aria-hidden="true"></i><?= Config::get('default_language') == 'ua' ? "Зв'язок зі мною" : "Contact me"; ?></a>
+					</li>
+					<li><a href="https://github.com/YakovenkoMaksim" target="_blank"><i class="fa fa-code-fork" aria-hidden="true"></i>GitHub</a></li>
+                    <li><a href="https://www.facebook.com/IakovenkoMaksym" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                </ul>
+
+			    <!-- Выбор языка -->
+                <div class="language">
+                    <form method="post">
+                        <input type="image" name="lang" src="/img/uk-icon.png" value="en">
+                        <input type="image" name="lang" src="/img/ukraine-icon.png" value="ua">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1 photo">
+            <img class="img-responsive img-thumbnail" src="/img/my_photo.jpg" alt="My photo">
+        </div>
+        <div class="col-md-8">
+            <div>
+                <?php if (Session::hasFlash()) { ?>
+                <div class="alert alert-info" role="alert">
+                    <?php Session::flash(); ?>
+                </div>
+                <?php } ?>
+
+                <?= $data['content'] ?>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

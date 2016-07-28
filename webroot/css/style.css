@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 14px;
+	min-width: 320px;
+}
+/* Main menu */
+
+.container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.fa {
+    padding-right: 5px;
+}
+
+/* делаем ссылку некликабельной */
+.disabled a {
+    pointer-events: none;
+}
+
+/* Language */
+
+.language {
+	position: absolute;
+	right: 20px;
+	top: 8px;
+}
+
+.language input {
+	height: 30px;
+	width: 30px;
+	margin: 0 10px;
+}
+
+.language .btn {
+	background: transparent;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Content */
+
+.photo img{
+	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+/* Index page */
+
+.list li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+/* Exp page */
+
+.certificate img {
+    margin: 5px 0;
+    width: 250px;
+}
+
+.certificate img:hover {
+    width: 583px;
+}
+
+/* Contacts page */
+
+.contact td {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.contact th {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact i {
+    font-size: large;
+}

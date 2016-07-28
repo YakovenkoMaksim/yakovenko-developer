@@ -1,0 +1,74 @@
+/* Proxima Nova */
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova/ProximaNova-Regular.eot");
+	src: url("fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+		url("fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"),
+		url("fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'ProximaNovaRg';
+	src: url('ProximaNova-Regular.eot');
+	src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNova-Regular.woff') format('woff'),
+		url('ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLt';
+	src: url('ProximaNova-Light.eot');
+	src: url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNova-Light.woff') format('woff'),
+		url('ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaCnRg';
+	src: url('ProximaNovaCond-BoldIt.eot');
+	src: url('ProximaNovaCond-BoldIt.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNovaCond-BoldIt.woff') format('woff'),
+		url('ProximaNovaCond-BoldIt.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ProximaNovaRg';
+	src: url('ProximaNova-RegularIt.eot');
+	src: url('ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNova-RegularIt.woff') format('woff'),
+		url('ProximaNova-RegularIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ProximaNovaExCnLt';
+	src: url('ProximaNovaExCn-SemiboldIt.eot');
+	src: url('ProximaNovaExCn-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNovaExCn-SemiboldIt.woff') format('woff'),
+		url('ProximaNovaExCn-SemiboldIt.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* Black Jack */
+
+@font-face {
+	font-family: "BlackJack";
+	src: url("fonts/BlackJack/BlackJack.eot");
+	src: url("fonts/BlackJack/BlackJack.eot?#iefix") format("embedded-opentype"),
+		url("fonts/BlackJack/BlackJack.woff") format("woff"),
+		url("fonts/BlackJack/BlackJack.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
