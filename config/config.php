@@ -21,8 +21,8 @@ if(isset($_SESSION['lang'])){
 Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');
 Config::set('db.host', 'mysql.hostinger.com.ua');
-Config::set('db.user', 'u730089702_lev');
-Config::set('db.password', 'ddI6egab1P');
-Config::set('db.db_name', 'u730089702_lev');
+Config::set('db.user', 'u948880495_dev');
+Config::set('db.password', 'G2n8vvvxz1');
+Config::set('db.db_name', 'u948880495_dev');
 
 Config::set('salt', '21eds23fdwe2es23');
