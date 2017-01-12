@@ -7,7 +7,19 @@
     <br>
 
     <h3>Maksym Yakovenko</h3>
-    <p>27 years old, Vyshneve, Ukraine</p>
+    <p>
+        <script>
+            var birthday = new Date("9/9/1988");
+            var today = new Date();
+            var years = today.getFullYear() - birthday.getFullYear();
+
+            birthday.setFullYear(today.getFullYear());
+            if (today < birthday) {
+                years --;
+            }
+            document.write(years + " years old");
+        </script>
+         Vyshneve, Ukraine</p>
     <p><b>Objective:</b><br> To obtain Junior WEB Front-end Developer position</p>
 
     <b>Technical skills:</b>

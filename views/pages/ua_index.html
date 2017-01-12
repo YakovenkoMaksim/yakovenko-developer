@@ -6,7 +6,18 @@
     <br>
     <br>
     <h3>Яковенко Максим</h3>
-    <p>27 років, м. Вишневе, Україна</p>
+    <p>
+        <script>
+            var birthday = new Date("9/9/1988");
+            var today = new Date();
+            var years = today.getFullYear() - birthday.getFullYear();
+
+            birthday.setFullYear(today.getFullYear());
+            if (today < birthday) {
+                years --;
+            }
+            document.write(years);
+        </script> років, м. Вишневе, Україна</p>
     <p><b>Мета:</b><br> Отримання посади Junior WEB Front-end Developer</p>
     <b>Технічні навички:</b>
     <ul class="list">

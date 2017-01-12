@@ -67,23 +67,23 @@
             </div>
         </div>
     </nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-md-offset-1 photo">
-            <img class="img-responsive img-thumbnail" src="/img/my_photo.jpg" alt="My photo">
-        </div>
-        <div class="col-md-8">
-            <div>
-                <?php if (Session::hasFlash()) { ?>
-                <div class="alert alert-info" role="alert">
-                    <?php Session::flash(); ?>
-                </div>
-                <?php } ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 photo">
+				<img class="img-responsive img-thumbnail" src="/img/my_photo.jpg" alt="My photo">
+			</div>
+			<div class="col-md-8">
+				<div>
+					<?php if (Session::hasFlash()) { ?>
+					<div class="alert alert-info" role="alert">
+						<?php Session::flash(); ?>
+					</div>
+					<?php } ?>
 
-                <?= $data['content'] ?>
-            </div>
-        </div>
-    </div>
-</div>
+					<?= $data['content'] ?>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
