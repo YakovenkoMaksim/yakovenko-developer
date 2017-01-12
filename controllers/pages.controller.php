@@ -29,6 +29,11 @@ class PagesController extends Controller
 
     }
 
+    public function practice()
+    {
+
+    }
+
     public function admin_index()
     {
         $this->data['pages'] = $this->model->getList();
